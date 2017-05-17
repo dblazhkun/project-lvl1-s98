@@ -1,6 +1,6 @@
 {
   "name": "danielsbraingames",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Training game-project",
   "main": "brain-games.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "babel-cli": "*",
     "babel-core": "*",
     "babel-preset-env": "*",
-    "babel-preset-stage-0": "*"
+    "babel-preset-stage-0": "*",
+    "readline-sync": "*"
   }
 }
