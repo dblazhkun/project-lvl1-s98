@@ -33,8 +33,8 @@ const calculatorBrainGame = () => {
     const answer = readlineSync.question(`Question: ${num1} ${operator} ${num2} `);
     console.log(`Your answer: ${answer} `);
 
-    parseFloat(answer);
-    parseFloat(rightAnswer);
+    String(rightAnswer);
+    String(answer);
 
     if (answer !== rightAnswer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}.`);
