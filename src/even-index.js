@@ -1,13 +1,11 @@
 import readlineSync from 'readline-sync';
 
 const randNum = () => Math.floor(Math.random() * 100);
-const askName = () => {
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello ${userName}!`);
-};
 
 const evenNumberBrainGame = () => {
-  const userName = askName();
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello ${userName}!`);
+
   const askEven = () => {
     const getRandNum = randNum();
     const checkAnswer = (answer) => {
