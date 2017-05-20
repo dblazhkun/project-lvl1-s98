@@ -22,7 +22,9 @@ const evenNumberBrainGame = () => {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}.`);
       return console.log(`Let's try again, ${userName}!`);
     }
+
     console.log('Correct!');
+
     if (i === 2) {
       return console.log(`Congratulations, ${userName}!`);
     }
