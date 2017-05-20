@@ -23,11 +23,11 @@ const calculatorBrainGame = () => {
     const operator = getRandomOperator();
     let rightAnswer = '';
     if (operator === '+') {
-      rightAnswer = num1 + num2;
+      rightAnswer = String(num1 + num2);
     } else if (operator === '-') {
-      rightAnswer = num1 - num2;
+      rightAnswer = String(num1 - num2);
     } else if (operator === '*') {
-      rightAnswer = num1 * num2;
+      rightAnswer = String(num1 * num2);
     }
 
     const answer = readlineSync.question(`Question: ${num1} ${operator} ${num2} `);
