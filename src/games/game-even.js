@@ -1,7 +1,8 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, wellcome, engine } from '..';
+import { getRandNum, engine } from '..';
 
 const even = () => {
+  const rule = 'Answer "yes" if number even otherwise answer "no".';
   const gameEven = () => {
     const question = getRandNum();
     let rightAnswer = '';
@@ -13,9 +14,7 @@ const even = () => {
     return cons(question, rightAnswer);
   };
 
-  wellcome();
-  console.log('Answer "yes" if number even otherwise answer "no".');
-  engine(gameEven);
+  engine(rule, gameEven);
 };
 
 export default even;

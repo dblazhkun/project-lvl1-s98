@@ -1,7 +1,8 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, getRandomOperator, wellcome, engine } from '..';
+import { getRandNum, getRandomOperator, engine } from '..';
 
 const calc = () => {
+  const rule = 'What is the result of the expression?';
   const gameCalc = () => {
     const num1 = getRandNum();
     const num2 = getRandNum();
@@ -20,9 +21,7 @@ const calc = () => {
     return cons(question, rightAnswer);
   };
 
-  wellcome();
-  console.log('What is the result of the expression?');
-  engine(gameCalc);
+  engine(rule, gameCalc);
 };
 
 export default calc;

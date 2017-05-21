@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
-export const wellcome = () => console.log('Welcome to the Brain Games!');
 export const getRandNum = () => Math.floor(Math.random() * 100);
 export const getRandomInRange = (min, max) => Math.floor(Math.random() * ((max - min) + 1)) + min;
 export const getRandomOperator = () => {
@@ -15,8 +14,9 @@ export const getRandomOperator = () => {
   return '*';
 };
 
-
-export const engine = (pair) => {
+export const engine = (rule, pair) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(rule);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
 

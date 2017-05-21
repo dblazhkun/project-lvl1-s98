@@ -1,7 +1,8 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, wellcome, engine } from '..';
+import { getRandNum, engine } from '..';
 
 const prime = () => {
+  const rule = 'Answer "yes" if number prime otherwise answer "no".';
   const gamePrime = () => {
     const question = getRandNum();
     const isPrime = (number) => {
@@ -25,9 +26,7 @@ const prime = () => {
     return cons(question, rightAnswer);
   };
 
-  wellcome();
-  console.log('Answer "yes" if number prime otherwise answer "no".');
-  engine(gamePrime);
+  engine(rule, gamePrime);
 };
 
 export default prime;

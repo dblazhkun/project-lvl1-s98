@@ -1,7 +1,8 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, getRandomInRange, wellcome, engine } from '..';
+import { getRandNum, getRandomInRange, engine } from '..';
 
 const progression = () => {
+  const rule = 'What number is missing in this progression?';
   const gameProgression = () => {
     const startNum = getRandNum();
     const stepNum = getRandNum();
@@ -18,20 +19,13 @@ const progression = () => {
 
     const getQuestion = () => {
       progressionArray[randomElementOfArray] = '..';
-      let string = '';
-      for (let i = 0; i < 9; i += 1) {
-        string += `${progressionArray[i]} `;
-      }
-      string += progressionArray[9];
-      return string;
+      return progressionArray.join(' ');
     };
     const question = getQuestion();
     return cons(question, rightAnswer);
   };
 
-  wellcome();
-  console.log('What number is missing in this progression?');
-  engine(gameProgression);
+  engine(rule, gameProgression);
 };
 
 export default progression;
