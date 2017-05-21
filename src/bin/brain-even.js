@@ -1,7 +1,18 @@
 #!/usr/bin/env node
-import evenNumberBrainGame from '../even-index';
+import { cons } from 'hexlet-pairs';
+import { getRandNum, wellcome, engine } from '..';
 
-console.log('Welcome to the Brain Games!');
+const gameEven = () => {
+  const question = getRandNum();
+  let rightAnswer = '';
+  if (question % 2 === 0) {
+    rightAnswer = 'yes';
+  } else {
+    rightAnswer = 'no';
+  }
+  return cons(question, rightAnswer);
+};
+
+wellcome();
 console.log('Answer "yes" if number even otherwise answer "no".');
-
-evenNumberBrainGame();
+engine(gameEven);
