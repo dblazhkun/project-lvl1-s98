@@ -1,5 +1,6 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, getRandomOperator, engine } from '..';
+import { engine } from '..';
+import { getRandNum, getRandomOperator } from '../math';
 
 const calc = () => {
   const rule = 'What is the result of the expression?';

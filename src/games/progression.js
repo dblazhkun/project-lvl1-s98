@@ -1,5 +1,6 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, getRandomInRange, engine } from '..';
+import { engine } from '..';
+import { getRandNum, getRandomInRange } from '../math';
 
 const progression = () => {
   const rule = 'What number is missing in this progression?';

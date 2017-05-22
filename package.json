@@ -1,6 +1,6 @@
 {
   "name": "danielsbraingames",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "description": "Training game-project",
   "main": "brain-games.js",
   "scripts": {

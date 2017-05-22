@@ -1,5 +1,6 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, engine } from '..';
+import { engine } from '..';
+import { getRandNum } from '../math';
 
 const even = () => {
   const rule = 'Answer "yes" if number even otherwise answer "no".';

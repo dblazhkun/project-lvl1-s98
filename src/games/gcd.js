@@ -1,5 +1,6 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, engine } from '..';
+import { engine } from '..';
+import { getRandNum } from '../math';
 
 const gcd = () => {
   const rule = 'Find the greatest common divisor of given numbers.';

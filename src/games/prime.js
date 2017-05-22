@@ -1,5 +1,6 @@
 import { cons } from 'hexlet-pairs';
-import { getRandNum, engine } from '..';
+import { engine } from '..';
+import { getRandNum } from '../math';
 
 const prime = () => {
   const rule = 'Answer "yes" if number prime otherwise answer "no".';
