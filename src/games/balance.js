@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import { engine } from '..';
+import engine from '..';
 import { getRandomInRange } from '../math';
 
 const balance = () => {
